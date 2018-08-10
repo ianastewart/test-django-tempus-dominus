@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+  <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>Test page for picker without widget</h2>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+          <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" />
+          <span class="input-group-addon" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                        Click
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+$( document ).ready(function() {
+    $(function () {
+        $('#datetimepicker1').datetimepicker({format: 'L', defaultDate: moment({year: 2005, month: 4, day: 4})});
+    });
+});
+</script>
+
+</html>

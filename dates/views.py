@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import CreateView, UpdateView, ListView
+from django.views.generic import CreateView, UpdateView, ListView, TemplateView
 from .models import DateTest
 from .forms import *
 
@@ -24,11 +24,13 @@ class DateUpdateView(UpdateView):
     template_name = 'dates/date_form.html'
     form_class = DateForm
     success_url = '/'
-    pass
 
 
 class DateListView(ListView):
     model = DateTest
     template_name = 'dates/date_list.html'
     context_object_name = 'dates'
-    pass
+
+
+class TestView(TemplateView):
+    template_name = 'dates/test.html'

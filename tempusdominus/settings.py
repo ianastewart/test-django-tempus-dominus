@@ -137,9 +137,7 @@ USE_TZ = True
 #     '%H:%M:%S',  # '17:59:59'
 #     '%H:%M',  # '17:59'
 # )
-# TIME_INPUT_FORMATS = (
-#     '%H:%M',  # '17:59'
-# )
+#
 # DATETIME_INPUT_FORMATS = (
 #     '%d-%m-%Y %H:%M',  # '21-03-2014 17:59'
 # )

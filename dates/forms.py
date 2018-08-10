@@ -12,12 +12,8 @@ class DateForm(ModelForm):
 
         model = DateTest
         fields = ('date', 'time', 'datetime', 'comment')
-        # fields = ('date',)
 
-        widgets = {'date':DatePicker(),
+        widgets = {'date':DatePicker(options=dateOptions),
                    'time': TimePicker(),
                    'datetime': DateTimePicker(),
                    }
-        # widgets = {'date': DatePicker(options=dateOptions)}
-        # widgets = {'date': DateInput}
-

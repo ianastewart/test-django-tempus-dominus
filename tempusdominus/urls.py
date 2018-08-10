@@ -21,7 +21,7 @@ urlpatterns = [
     path('', DateListView.as_view(), name='list'),
     path('create/', DateCreateView.as_view(), name='create'),
     path('update/<int:pk>/', DateUpdateView.as_view(), name='update'),
-
+    path('test/', TestView.as_view(), name='test'),
     path('admin/', admin.site.urls),
 
 ]

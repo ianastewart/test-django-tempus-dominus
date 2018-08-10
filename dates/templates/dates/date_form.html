@@ -8,9 +8,10 @@
   <div class="col">
     <form method="post"> {% csrf_token %}
       {{ form.as_p }}
-      <input type="submit" >
+      <input type="submit" class="btn btn-success" value="Save" >
     </form>
   </div>
+  <a href="/" class="btn btn-default">Back to list</a>
   </div>
 
 
