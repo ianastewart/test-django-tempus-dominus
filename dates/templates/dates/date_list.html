@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h3>Date test</h3>
+{% for d in dates %}
+  <p>
+    <a href="{% url 'update' pk=d.pk %}">{{ d.date }}</a>,  {{ d.time }}, {{ d.datetime}}, {{ d.comment}}
+  </p>
+{% endfor %}
+  <a href="{% url 'create' %}" class='btn btn-success'>Create</a>
+{% endblock %}
